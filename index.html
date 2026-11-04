@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Morone Ferreira</title>
+    <meta name="description" content="WDD 131 - Fundamentos da Web Dinâmica, Morone Ferreira, página inicial do curso com HTML, CSS e JavaScript">
+    <meta name="author" content="Morone Ferreira">
+    <link rel="stylesheet" href="estilos/base.css">
+    <script src="scripts/obterdatas.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+    <span id="titulo-curso">
+        WDD131 – Fundamentos da Web Dinâmica
+    </span>
+
     <h1>Morone Ferreira</h1>
+
+    <nav>
+        <a href="https://www.linkedin.com">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/33?lang=por&id=p7#p7">Escrituras</a>
+        <a href="#">Projeto Final</a>
+    </nav>
+</header>
+    <main>
+        <section class="card">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-mim-conteudo">
+            <p>Olá! Meu nome é Morone Ferreira, moro em Itaquaquecetuba - SP. Estou aprendendo Desenvolvimento Web Dinâmico na BYU. Gosto de programar e aprender coisas novas.</p>
+            <img src="imagens/morone.jpg" alt="Foto de Morone Ferreira" width="150">
+            </div>
+            <h3>Itaquaquecetuba, São Paulo, Brasil</h3>
+            <img src="imagens/brasao-itaqua.png" alt="Brasão da cidade de Itaquaquecetuba, São Paulo, Brasil">
+            <p>Itaquaquecetuba é uma cidade localizada no estado de São Paulo, Brasil. É conhecida por sua rica história, cultura vibrante e comunidade acolhedora. A cidade oferece uma variedade de atrações culturais, eventos e atividades para os moradores e visitantes.</p>
+        </section>
+        <section class="card">
+            <h2>Recursos de Desenvolvimento Web</h2>
+            <ul>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+                <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://picsum.photos">Picsum Photos Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="anoatual"></span> Morone Ferreira - Itaquaquecetuba, São Paulo, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
     
 </body>
 </html>
