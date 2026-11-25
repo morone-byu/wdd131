@@ -1,5 +1,5 @@
 :root {
-    --verde: #009739;
+    --verde-escuro: #004d1a;
     --amarelo: #fedd00;
     --azul: #002776;
     --branco: #ffffff;
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: var(--verde);
+    background-color: var(--verde-escuro);
     color: var(--branco);
     text-align: center;
     padding: 1rem;
@@ -68,7 +68,7 @@ main {
 }
 
 footer {
-    background-color: var(--verde);
+    background-color: var(--verde-escuro);
     color: var(--branco);
     text-align: center;
     padding: 1rem;
