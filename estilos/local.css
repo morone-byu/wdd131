@@ -1,0 +1,116 @@
+:root {
+    --verde: #009739;
+    --amarelo: #fedd00;
+    --azul: #002776;
+    --branco: #ffffff;
+    --cinza-claro: #f2f2f2;
+    --preto: #222222;
+    --fonte-titulo: 'Arial', sans-serif;
+    --fonte-texto: 'Verdana', sans-serif;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    color: var(--preto);
+    background-color: var(--branco);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dados, .clima {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.dados h2, .clima h2 {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.rotulo {
+    font-weight: bold;
+}
+
+.clima img {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+footer {
+    background-color: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+@media (min-width: 1000px) { header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    position: relative;
+}
+
+.dados, .clima {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-bottom: none;
+    width: 280px;
+    text-align: left;
+}
+
+.dados {
+    top: 2rem;
+    left: 2rem;
+}
+
+.clima {
+    top: 2rem;
+    right: 2rem;
+}
+
+.clima img {
+    display: none;
+}
+
+.clima h2::after {
+    content: " ⛅";
+}
+}

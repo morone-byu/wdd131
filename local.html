@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil - Página do País</title>
+    <meta name="description" content="Página sobre o Brasil com dados e clima.">
+    <meta name="author" content="Morone Ferreira">
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1> 
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="imagens/brasil-hero-grande.webp" media="(min-width: 1000px)">
+                <source srcset="imagens/brasil-hero-pequeno.webp" media="(max-width:999px)">
+                <img src="imagens/brasil-hero-pequeno.webp" alt="Vista do Rio de Janeiro, Brasil" width="500" height="333">
+            </picture>
+        </div>
+        <section class="dados">
+            <h2>Dados</h2>
+            <p><span class="rotulo">Área:</span> 8.514.877 km²</p>
+            <p><span class="rotulo">População:</span> 212.600.000</p>
+            <p><span class="rotulo">Capital:</span> Brasília</p>
+            <p><span class="rotulo">Idioma:</span> Português</p>
+            <p><span class="rotulo">Moeda:</span> Real brasileiro (R$)</p>
+            <p><span class="rotulo">Fuso Horário:</span> UTC-3</p>
+            <p><span class="rotulo">Código de chamada:</span> +55</p>
+            <p><span class="rotulo">Domínio da Internet:</span> .br</p>
+        </section>
+
+        <section class="clima">
+            <h2>Clima</h2>
+            <img src="imagens/icone-clima.svg" alt="Parcialmente nublado" width="80" height="80">
+            <p><span class="rotulo">Temperatura:</span> 28°C</p>
+            <p><span class="rotulo">Condição:</span> Parcialmente nublado</p>
+            <p><span class="rotulo">Vento:</span> 15 km/h</p>
+            <p><span class="rotulo">Sensação Térmica:</span> <span id="sensacao-termica"></span></p>
+        </section>
+    </main>
+
+    <footer>
+         <p>&copy; <span id="ano-atual"></span> 🌎 Morone Ferreira 🌎 Brasil</p>
+            <p id="ultima-modificacao"></p>
+    </footer>
+    
+</body>
+</html>
