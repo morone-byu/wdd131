@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Templos</title>
+    <meta name="description" content="Álbum de fotos de templos com filtros por idade e tamanho.">
+    <meta name="author" content="Morone Ferreira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Álbum do Templo</p>
+        <button id="menu" aria-label="Abrir menu">☰</button>
+        <nav>
+            <ul class="navegacao">
+                <li><a href="#" id="inicio" class="ativo">Página Inicial</a></li>
+                <li><a href="#" id="antigos">Antigo</a></li>
+                <li><a href="#" id="novos">Novo</a></li>
+                <li><a href="#" id="grandes">Grande</a></li>
+                <li><a href="#" id="pequenos">Pequeno</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <h1 id="titulo-filtro">Templos do Brasil</h1>
+        <div id="container-templos" class="album"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="anoatual"></span> 🌎 Morone Ferreira 🌎 Brasil</p>
+        <p id="ultimamodificacao"></p>
+    </footer>
+</body>
+</html>
